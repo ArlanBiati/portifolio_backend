@@ -1,0 +1,519 @@
+/* =========== HEADER =========== */
+header {
+    display: flex;
+
+    width: 100vw;
+    height: 90px;
+
+    position: fixed;
+    z-index: 9999;
+
+    background-color: rgb(24, 26, 21);
+}
+
+header div.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img:nth-child(1) {
+    width: 80px;
+    height: 50px;
+}
+
+header .header a {
+    padding: 8px;
+}
+
+header .header a:hover {
+    color: greenyellow;
+
+    transition: all 400ms ease-in-out;
+}
+
+/* ============= BANNER ME ============= */
+
+section.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    padding: 32% 0;
+}
+
+section div.banner-image {
+    display: grid;
+    justify-items: right;
+}
+
+section div.banner-image img {
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+    border: 2px solid greenyellow;
+}
+
+section div.banner-description h3{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+    color: #d8d7d6;
+}
+
+section div.banner-description h1{
+    font-size: 80px;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+    color: white;
+
+    margin: 30px 0;
+}
+
+section div.banner-description p{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+    color: #d8d7d6;
+
+    margin-bottom: 50px;
+}
+
+.down {
+    position: absolute;
+
+    bottom: 20%;
+    right: -20px;
+
+    transform: rotate(-90deg);
+
+    font-size: 14px;
+}
+
+.down a {
+    color: white;
+}
+
+.down::before {
+    content: "";
+
+    position: absolute;
+
+    bottom: -18px;
+    left: -40px;
+
+    width: 1px;
+    height: 55px;
+
+    background-color: greenyellow;
+
+    transform: rotate(90deg);
+}
+
+.down a:hover {
+    color: greenyellow;
+
+    transition: all 400ms ease-in-out;
+}
+
+/* =============== ABOUT ME ============= */
+
+.about .number.show {
+    opacity: 1;
+}
+
+.about .number {
+    position: absolute;
+
+    top: 125%;
+    right: 45px;
+
+    color: greenyellow;
+
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: .8px;
+
+    transition: all 1.8s ease-in-out;
+}
+
+.about .number::before {
+    content: "";
+
+    position: absolute;
+
+    top: 29px;
+    left: 68px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: white;
+}
+
+section.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    padding: 32% 0;
+}
+
+section.about div.about-image {
+    padding: 8px;
+
+    opacity: .9;
+}
+
+section.about div.about-image img {
+    width: 90%;
+    height: auto;
+
+    box-shadow: 0 0 24px rgba(250, 250, 250, 0.350);
+}
+
+section.about div.about-me h3 {
+    font-weight: 600;
+    letter-spacing: .8px;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+
+    color: greenyellow;
+}
+
+section.about div.about-me h2 {
+    position: relative;
+
+    display: inline-block;
+
+    color: white;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+    padding-bottom: 16px;
+}
+
+section.about div.about-me h2::after {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 65px;
+    height: 2px;
+
+    background-color: greenyellow;
+}
+
+section.about div.about-me p {
+    color: #d8d7d6;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+
+    margin: 32px 0 64px 0;
+}
+
+section.about div.about-me div.about-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 5% 5% ;
+
+    color: white;
+
+    border-radius: 8px;
+    border: 1px solid greenyellow;
+}
+
+section.about div.about-me div.about-form span {
+    font-weight: bold;
+    color: greenyellow;
+}
+
+section.about div.about-me div.about-form div.form-info {
+    padding: 8% 0;
+}
+
+/* ============ services ============ */
+
+.services .number.show {
+    opacity: 1;
+}
+
+.services .number {
+    position: absolute;
+
+    top: 225%;
+    right: 45px;
+
+    color: greenyellow;
+
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: .8px;
+
+    transition: all 1.8s ease-in-out;
+}
+
+.services .number::before {
+    content: "";
+
+    position: absolute;
+
+    top: 29px;
+    left: 78px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: white;
+}
+
+section.services div.myServices h3 {
+    font-weight: 600;
+    letter-spacing: .8px;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+
+    color: greenyellow;
+}
+
+section.services div.myServices h2 {
+    position: relative;
+
+    display: inline-block;
+
+    color: white;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+    padding-bottom: 16px;
+}
+
+section.services div.myServices h2::after {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 65px;
+    height: 2px;
+
+    background-color: greenyellow;
+}
+
+section.services {
+    padding: 5% 0;
+}
+
+section.services div.gridServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+
+    margin-top: 64px;
+}
+
+section.services div.service {
+    border: 1px solid greenyellow;
+    border-radius: 8px;
+
+    padding: 8%;
+}
+
+section.services div.service:hover {
+    background-color: rgba(255, 255, 255, 0.096);
+
+    transition: background-color 400ms ease-in-out;
+}
+
+section.services div.service img {
+    width: 25%;
+}
+
+section.services div.service h1 {
+    color: white;
+
+    margin-top: 16px;
+}
+
+section.services div.service p {
+    color: #d8d7d6;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+
+    text-align: left;
+
+    margin-top: 16px; 
+}
+
+/* ======== skills =========== */
+
+.skills .number.show {
+    opacity: 1;
+}
+
+.skills .number {
+    position: absolute;
+
+    top: 340%;
+    right: 45px;
+
+    color: greenyellow;
+
+    font-size: 54px;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: .8px;
+
+    transition: all 1.8s ease-in-out;
+}
+
+.skills .number::before {
+    content: "";
+
+    position: absolute;
+
+    top: 29px;
+    left: 78px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: white;
+}
+
+section.skills div.mySkills {
+    padding-top: 32%;
+
+    text-align: center;
+}
+
+section.skills div.mySkills h3 {
+    font-weight: 600;
+    letter-spacing: .8px;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+
+    color: greenyellow;
+}
+
+section.skills div.mySkills h2 {
+    position: relative;
+
+    display: inline-block;
+
+    color: white;
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+    padding-bottom: 16px;
+}
+
+section.skills div.mySkills h2::after {
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 33.3%;
+
+    width: 65px;
+    height: 2px;
+
+    background-color: greenyellow;
+}
+
+section.skills div.percentages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+
+    margin-top: 64px;
+
+    padding-bottom: 24%;
+}
+
+section.skills div.percentages .skillPercentageHTML {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+section.skills div.percentages .skillPercentageHTML h3 {
+    font-weight: normal;
+
+    color: white;
+
+    margin-bottom: 16px;
+}
+
+section.skills div.percentages .skillPercentageHTML h4 {
+    color: white;
+
+    position: absolute;
+
+    margin-bottom: 16px;
+    padding: 5px;
+
+    left: calc(95% - 21px);
+
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+}
+
+section.skills div.percentages .skillPercentageHTML h4::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    padding: 4px;
+    background: rgb(0, 0, 0);
+    border: 1px solid greenyellow;
+    border-color: transparent greenyellow greenyellow transparent;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+section.skills div.linePercentage {
+    width: 100%;
+    height: 2px;
+
+    background-color: white;
+}
+
+section.skills div.percentage {
+    width: 95%;
+    height: 2px;
+
+    background-color: greenyellow;
+}
